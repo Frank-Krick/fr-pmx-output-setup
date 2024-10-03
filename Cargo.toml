@@ -1,0 +1,16 @@
+[package]
+name = "fr-pmx-output-setup"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.12.1", features = ["image", "svg", "tokio"] }
+itertools = "0.13.0"
+prost = "0.13.2"
+tokio = { version = "1.40.0", features = ["full"] }
+tonic = "0.12.2"
+fr-pmx-config-lib = { path = "../fr-pmx-config-lib" }
+fr-logging = { path = "../fr-logging" }
+
+[build-dependencies]
+tonic-build = "0.12.2"
